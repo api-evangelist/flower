@@ -1,0 +1,32 @@
+generated: '2026-07-19'
+method: searched
+source: https://flower.ai/docs/intelligence/ + https://flower.ai/docs/framework/ref-api-cli.html
+description: >-
+  Authentication across Flower Labs' two surfaces. There is no first-party
+  OpenAPI in the repo, so this profile is derived from the official docs rather
+  than a spec. Flower Intelligence's confidential remote-compute service
+  authenticates with an API key; the Flower framework's hosted control plane
+  (SuperLink / SuperGrid) authenticates via `flwr login`.
+summary:
+  types: [apiKey]
+  api_key_in: [sdk-attribute]
+  oauth2_flows: []
+schemes:
+  - name: FlowerIntelligenceApiKey
+    type: apiKey
+    in: sdk-attribute
+    detail: >-
+      Remote confidential compute is disabled by default. Callers enable it by
+      setting `remoteHandoff = true` and supplying `apiKey = "YOUR_API_KEY"` on
+      the Flower Intelligence singleton. API keys are issued via
+      https://flower.ai/intelligence.
+    docs: https://flower.ai/docs/intelligence/
+    sources: [docs]
+  - name: SuperLinkLogin
+    type: session
+    in: cli
+    detail: >-
+      The Flower framework control plane is accessed after `flwr login` against
+      a SuperLink / SuperGrid; connections are managed with `flwr config list`.
+    docs: https://flower.ai/docs/framework/ref-api-cli.html
+    sources: [docs]
