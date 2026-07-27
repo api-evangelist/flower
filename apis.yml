@@ -1,7 +1,17 @@
 aid: flower
 name: Flower
-description: Flower is a company surfaced as a portfolio company of felicis, northzone and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Flower Labs builds infrastructure for collaborative, decentralized AI. Its
+  flagship open-source project, Flower (the `flwr` framework), is a friendly,
+  framework-agnostic federated AI framework that lets organizations train and
+  fine-tune machine-learning models on distributed, privacy-sensitive data
+  without moving it across organizational boundaries — with support for PyTorch,
+  TensorFlow, Hugging Face, scikit-learn, JAX, XGBoost, and more. Flower
+  Intelligence extends this to on-device inference (TypeScript/JavaScript,
+  Kotlin, and Swift SDKs) that can hand off to a confidential remote-compute
+  service when extra capacity is needed. Flower also runs SuperGrid (federated
+  AI networks), Flower Hub, and a hosted control plane accessed via the flwr
+  CLI. Flower Labs is backed by Felicis, Northzone, and Y Combinator.
 url: https://raw.githubusercontent.com/api-evangelist/flower/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,11 +20,33 @@ x-backed-by:
 - northzone
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://flower.ai/static/images/icon/apple-touch-icon.png
 tags:
 - Company
+- Federated Learning
+- Federated AI
+- Machine Learning
+- Artificial Intelligence
+- Privacy
+- SDK
+- On-Device AI
+- Confidential Computing
+- Open Source
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,3 +56,46 @@ maintainers:
 common:
 - type: Website
   url: https://flower.ai
+- type: DeveloperPortal
+  url: https://flower.ai/docs/
+- type: Documentation
+  url: https://flower.ai/docs/
+- type: APIReference
+  url: https://flower.ai/docs/framework/ref-api/flwr.html
+- type: GettingStarted
+  url: https://flower.ai/docs/framework/
+- type: GitHubOrganization
+  url: https://github.com/flwrlabs
+- type: Blog
+  url: https://flower.ai/blog
+- type: Support
+  url: https://discuss.flower.ai
+- type: Community
+  url: https://flower.ai/join-slack
+- type: SignUp
+  url: https://flower.ai/intelligence
+- type: PrivacyPolicy
+  url: https://flower.ai/privacy
+- type: TermsOfService
+  url: https://flower.ai/legal/terms-of-service
+- type: TrustCenter
+  url: security/flower-trust-center.yml
+- type: Packages
+  url: packages/flower-packages.yml
+- type: SDKs
+  url: packages/flower-packages.yml
+- type: CLI
+  url: cli/flower-cli.yml
+- type: ChangeLog
+  url: changelog/flower-changelog.yml
+- type: Authentication
+  url: authentication/flower-authentication.yml
+- type: DomainSecurity
+  url: security/flower-domain-security.yml
+- type: LLMsTxt
+  url: llms/flower-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

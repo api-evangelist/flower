@@ -1,0 +1,46 @@
+generated: '2026-07-19'
+method: searched
+source: https://flower.ai/docs/framework/ref-changelog.html
+description: >-
+  Recent releases of the Flower framework (`flwr`). Flower publishes a dated,
+  per-version changelog in its documentation. Only the recent window is captured
+  here; the live changelog is the source of truth.
+scheme: semver
+current_version: 1.32.1
+changelog_url: https://flower.ai/docs/framework/ref-changelog.html
+entries:
+  - version: 1.32.1
+    date: '2026-07-01'
+    breaking: false
+    highlights:
+      - Fix flwr-simulation failing to exit; improved agent reliability.
+  - version: 1.32.0
+    date: '2026-06-25'
+    breaking: false
+    highlights:
+      - Introduces default federations on SuperGrid.
+      - Enables runtime dependency installation.
+  - version: 1.31.0
+    date: '2026-06-08'
+    breaking: true
+    highlights:
+      - Prepares infrastructure for Flower Agent support; adds SuperGrid guides.
+      - Dropped Python 3.10 support.
+  - version: 1.30.0
+    date: '2026-05-20'
+    breaking: true
+    highlights:
+      - Introduces task system for executor process lifecycle management.
+      - Disallows manually running internal flwr-* commands (only SuperExec can launch them).
+  - version: 1.29.0
+    date: '2026-04-12'
+    breaking: true
+    highlights:
+      - Runtime dependency installation for isolated execution; enhanced federation management.
+      - Removed Flower File Storage (FFS); eliminates --storage-dir option from SuperLink.
+  - version: 1.28.0
+    date: '2026-04-02'
+    breaking: true
+    highlights:
+      - Federation-based simulation configuration; improved local SuperLink stability.
+      - Removed deprecated run_simulation Python entrypoint.

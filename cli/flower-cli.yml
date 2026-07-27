@@ -1,0 +1,59 @@
+generated: '2026-07-19'
+method: searched
+source: https://flower.ai/docs/framework/ref-api-cli.html
+description: >-
+  The `flwr` command-line interface — the primary developer entrypoint for the
+  Flower framework. It scaffolds Flower Apps, builds them into Flower App
+  Bundles (FABs), runs them against a local or hosted SuperLink / SuperGrid,
+  manages federations and SuperNodes, and streams run logs. The binary ships in
+  the `flwr` PyPI package (see packages/flower-packages.yml).
+binary: flwr
+install: pip install flwr
+docs: https://flower.ai/docs/framework/ref-api-cli.html
+command_groups:
+  - group: app lifecycle
+    commands:
+      - name: flwr new
+        purpose: Create a new Flower App from a template.
+      - name: flwr build
+        purpose: Build a Flower App into a Flower App Bundle (FAB).
+      - name: flwr run
+        purpose: Run a Flower App (locally or against a hosted SuperLink).
+      - name: flwr install
+        purpose: Install a Flower App Bundle.
+      - name: flwr log
+        purpose: Retrieve and display logs from a Flower run.
+      - name: flwr list
+        purpose: Display run details by ID or view all runs.
+      - name: flwr stop
+        purpose: Stop a running Flower App execution.
+      - name: flwr pull
+        purpose: Obtain download URLs for artifacts from completed runs.
+  - group: auth / connection
+    commands:
+      - name: flwr login
+        purpose: Login to Flower SuperLink.
+      - name: flwr config list
+        purpose: List all SuperLink connections.
+  - group: Flower Hub
+    commands:
+      - name: flwr app publish
+        purpose: Publish a Flower App to Flower Hub.
+      - name: flwr app review
+        purpose: Download and review a FAB before submitting to Flower Hub.
+  - group: federation management
+    commands:
+      - name: flwr federation create
+        purpose: Create a new federation.
+      - name: flwr federation list
+        purpose: List available federations or details of a specific federation.
+      - name: flwr federation invite
+        purpose: Manage invitations to join federations.
+      - name: flwr federation add-supernode
+        purpose: Add a SuperNode to a federation.
+      - name: flwr federation remove-supernode
+        purpose: Remove a SuperNode from a federation.
+      - name: flwr supernode register
+        purpose: Add a SuperNode to the federation.
+      - name: flwr supernode list
+        purpose: List SuperNodes in the federation.

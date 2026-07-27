@@ -1,0 +1,45 @@
+generated: '2026-07-19'
+method: searched
+source: https://flower.ai/docs/ + public package registries (PyPI, npm)
+description: >-
+  First-party Flower Labs client libraries. Two product lines: the Flower
+  framework (`flwr`, federated AI on Python) and Flower Intelligence (on-device
+  + confidential remote-compute inference SDKs for TypeScript/JavaScript,
+  Kotlin, and Swift). PyPI and npm entries were confirmed against the public
+  registries at fetch time; the Kotlin (Gradle) and Swift coordinates are taken
+  from the official Flower Intelligence documentation.
+packages:
+  - language: python
+    registry: pypi
+    name: flwr
+    url: https://pypi.org/project/flwr/
+    source: https://github.com/adap/flower
+    install: pip install flwr
+    version: 1.32.1
+    official: true
+    note: The Flower framework — a friendly federated AI framework.
+  - language: javascript
+    registry: npm
+    name: "@flwr/flwr"
+    url: https://www.npmjs.com/package/@flwr/flwr
+    source: https://github.com/adap/flower
+    install: npm i @flwr/flwr
+    version: 0.2.5
+    official: true
+    note: Flower Intelligence — on-device AI with optional confidential remote compute (TypeScript/JavaScript SDK).
+  - language: kotlin
+    registry: maven
+    name: ai.flower:intelligence
+    url: https://flower.ai/docs/intelligence/
+    source: https://flower.ai/docs/intelligence/
+    install: 'implementation("ai.flower:intelligence:0.1.8")'
+    official: true
+    note: Flower Intelligence Kotlin/Android SDK; coordinate per the official docs (registry listing not confirmed via Maven Central at fetch time).
+  - language: swift
+    registry: spm
+    name: flower-intelligence-swift
+    url: https://flower.ai/docs/intelligence/
+    source: https://flower.ai/docs/intelligence/
+    install: Add the Flower Intelligence Swift package via Swift Package Manager (see docs).
+    official: true
+    note: Flower Intelligence Swift SDK; installed as a GitHub Swift Package per the official docs.
