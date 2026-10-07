@@ -79,6 +79,10 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: Pricing
+  url: https://flower.ai/pricing
+- type: Plans
+  url: plans/flower-plans-pricing.yml
 - type: Website
   url: https://flower.ai
 - type: DeveloperPortal
