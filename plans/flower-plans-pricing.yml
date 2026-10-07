@@ -1,0 +1,53 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://flower.ai/pricing
+sources:
+- https://flower.ai/pricing
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T112025
+  grounding: every price_text was found verbatim in the fetched page text
+audience: developer-api
+pricing_basis: tiered-subscription
+delivery:
+  delivery: managed
+  method: page
+  read: '2026-10-07'
+published: true
+note: Monthly/Yearly toggle, 'Save up to 16 %'; prices shown billed yearly. Credit-based tiers with Contact
+  Sales top tier.
+plan_count: 5
+currency: USD
+plans:
+- name: SuperGrid Pro (placeholder)
+  price_text: $17 / month , billed yearly
+  price: 17
+  currency: USD
+  period: month
+  unit: credits
+  included_quota: 8,000 monthly credits
+- name: SuperGrid Pro (Most Popular)
+  price_text: $42 / month , billed yearly
+  price: 42
+  currency: USD
+  period: month
+  unit: credits
+  included_quota: 20,000 monthly credits (scales up to 20,000,000 monthly credits)
+- name: SuperGrid Pro (placeholder)
+  price_text: $167 / month , billed yearly
+  price: 167
+  currency: USD
+  period: month
+  unit: credits
+  included_quota: 80,000 monthly credits
+- name: SuperGrid Max
+  price_text: Contact Sales
+  period: none
+  unit: credits
+  included_quota: Custom monthly credits
+- name: Flower Account Sign-Up
+  price_text: Sign up for free
+  period: none
+  unit: credits
+  included_quota: 3,000 sign-up credits
